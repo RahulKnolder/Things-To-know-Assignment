@@ -1,4 +1,4 @@
-package privateInstanceVariable;
+package Getter_Setter;
 
 public class Details {
     private int myNumber;

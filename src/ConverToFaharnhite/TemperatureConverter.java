@@ -19,8 +19,8 @@ public class TemperatureConverter {
 
         Scanner readTemp =  new Scanner(System.in);
         System.out.println("enter the temprature");
-        TemperatureConverter tc = new TemperatureConverter(readTemp.nextInt());
-        double temperatureInFahrenheit = tc.convertToFahrenheit();
+        TemperatureConverter temConuntObject = new TemperatureConverter(readTemp.nextInt());
+        double temperatureInFahrenheit = temConuntObject.convertToFahrenheit();
         System.out.println("Temperature in Fahrenheit: " + temperatureInFahrenheit);
     }
 }

@@ -10,8 +10,8 @@ public class MyClass {
     }
 
     public static void main(String[] args) {
-        MyClass m = new MyClass();
-        m.myPackageMethod();
+        MyClass myClaassObject= new MyClass();
+        myClaassObject.myPackageMethod();
     }
 }
 

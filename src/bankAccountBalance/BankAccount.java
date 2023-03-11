@@ -1,5 +1,7 @@
 package bankAccountBalance;
 
+import java.util.Scanner;
+
 public class BankAccount {
     private double balance;
     private static double interestRate;
@@ -23,6 +25,8 @@ public class BankAccount {
     }
 
     public static void main(String[] args) {
+        Scanner readName = new Scanner(System.in);
+
         BankAccount account = new BankAccount(10000);
         BankAccount.setInterestRate(0.025);
         double interestEarned = account.calculateInterest();

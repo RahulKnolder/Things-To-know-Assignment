@@ -1,11 +1,11 @@
 package Task15.Package2;
 
 public class MyOtherClass {
-    public void myMethod() {
-        MyClass obj = new MyClass();
-        int value = obj.myDefaultVariable;
-        System.out.println("The value is: " + value);
-    }
+//    public void myMethod() {
+//        MyClass obj = new MyClass();
+//        int value = obj.myDefaultVariable;
+//        System.out.println("The value is: " + value);
+//    }
 }
 
 

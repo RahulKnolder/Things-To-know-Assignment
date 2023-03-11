@@ -1,5 +1,7 @@
 package ExponentialFunction;
 
+import java.util.Scanner;
+
 public class MathUtils {
     public static final double E = 2.71828;
 
@@ -9,7 +11,10 @@ public class MathUtils {
     }
 
     public static void main(String[] args) {
-        double exponentialValue = MathUtils.calculateExponential(2.5);
+
+        Scanner read = new Scanner(System.in);
+        System.out.println("enter the value");
+        double exponentialValue = MathUtils.calculateExponential(read.nextInt());
         System.out.println("Exponential value: " + exponentialValue);
     }
 }

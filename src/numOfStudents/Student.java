@@ -1,5 +1,7 @@
 package numOfStudents;
 
+import java.util.Scanner;
+
 public class Student {
     private String name;
     private int id;
@@ -16,9 +18,21 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student s1 = new Student("John", 1001);
-        Student s2 = new Student("Jane", 1002);
-        Student s3 = new Student("Bob", 1003);
+          int count=1;
+        Scanner read = new Scanner(System.in);
+        System.out.println(count+" enter the name and id");
+
+        Student student1 = new Student(read.nextLine(), read.nextInt());
+
+        count++;
+        System.out.println(count+" enter the name and id");
+        read.nextLine();
+        Student student2 = new Student(read.nextLine(), read.nextInt());
+
+        count++;
+        System.out.println(count+" enter the name and id");
+        read.nextLine();
+        Student student3 = new Student(read.nextLine(), read.nextInt());
 
         int totalStudents = Student.getNumOfStudents();
         System.out.println("Total number of students enrolled: " + totalStudents);

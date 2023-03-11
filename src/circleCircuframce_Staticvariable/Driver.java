@@ -1,8 +1,12 @@
 package circleCircuframce_Staticvariable;
 
+import java.util.Scanner;
+
 public class Driver {
     public static void main(String[] args) {
-        Circle circle = new Circle(5.0); // create a new Circle object with radius 5
+        Scanner read = new Scanner(System.in);
+        System.out.println("enter the radius");
+        Circle circle = new Circle(read.nextInt()); // create a new Circle object with radius 5
         double circumference = circle.getCircumference(); // calculate the circumference
         System.out.println("Circumference: " + circumference); // prints "Circumference: 31.4159"
 

@@ -4,6 +4,12 @@ public class MySubclass extends MyClass {
     public void myPublicMethod() {
         myProtectedMethod();
     }
+
+    public static void main(String[] args) {
+        MySubclass subclassObject= new MySubclass();
+        subclassObject.myPublicMethod();
+    }
+
 }
 
     /* What happens when we try to call the protected method from the subclass
